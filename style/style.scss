@@ -1,0 +1,697 @@
+#nav {
+    display: grid;
+    grid-template-columns: 90% 10%;
+    color: aliceblue;
+    border: 10px;
+    border-color: rgb(70, 70, 67);
+    margin-bottom: 1em;
+    
+    #icon{
+        align-self: start;
+        padding-top: 10px;;
+        width: 10em;
+    }
+    #sign{
+       color: white;
+       margin-left:-3em;
+       margin-top: 20px;
+    }
+}
+
+#container{
+    width: 100%;
+    
+}
+body {
+    button{
+        cursor: pointer;
+    }
+    a{
+        color:rgb(153, 2, 77);
+        cursor: pointer;
+    }
+    background-color: black;
+    color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+
+    #cover {
+      text-align: center;
+      margin-top: 35%;
+      width: 90%
+
+      p{
+          color: rgb(145, 144, 143);
+      }
+
+      h1 {
+          font-size: 43px;
+          margin: 0%;
+      }
+
+      #fotter {
+          color: aliceblue;
+          font-size: 19px;
+          padding: 0 1em 0 1em;
+      }
+    }
+
+    .slider {
+        position: absolute;
+        display: flex;
+        flex: auto;
+        margin: 1em;
+        left: 45%;
+        transform: translate(-50%,-50%);
+        width: 80%;
+        height: 40px;
+
+        background: black;
+
+     input {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width:100%;
+        height: 100%;
+        display: block;
+        cursor: pointer;
+        opacity: 0;
+        z-index: 1;
+    }
+
+    div {
+        position: absolute;
+        top: 0;
+        left:0;
+        width: 100%;
+        height: 90%;
+        border: 1px solid white;
+        border-radius: 20px;
+        box-shadow: 0 10px 20px rgba(92, 90, 90, 0.5);
+        overflow: hidden;
+
+        .slide{
+            position: absolute;
+            top: 0px;
+            left: 0;
+            width: 50%;
+            height: 40px;
+            background: white;
+            border-radius: 20px;
+            transition: 0.5s;
+        }
+    }
+
+    input:checked + div .slide {
+        transform: translateX(100%);
+    }
+    input + div .slide::before {
+        content: 'Personal';
+        position: absolute;
+        top: 0.5em;
+        left: 0;
+        text-align: center;
+        width: 100%;
+        height: 100%;
+        color: black;
+    }
+    input + div .slide::after {
+        content: 'Business';
+        position: absolute;
+        top: 0.5em;
+        left: 0;
+        text-align: center;
+        width: 100%;
+        height: 100%;
+        color: black;
+    }
+  }
+
+  #card {
+      position: relative;
+      color: white;
+      top: 70%;
+      width: 85%;
+      left:15px;
+      background-color: rgb(36, 36, 39);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0;
+      margin-left: 0.6em;
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  
+  }
+  #card1{
+    text-align: center;
+  }
+  #month-price {
+      font-size: 5em;
+
+      sup { 
+        vertical-align: super;
+        font-size: 0.3em;
+      }
+  }
+
+  #card3{
+      text-align:left ;
+      background-color: rgb(29, 28, 28);
+      position: relative;
+      color: white;
+      width: 85%;
+      left:15px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0em;
+      margin-left: 0.6em;
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+
+  }
+
+  #button {
+      width: 70%;
+      height: 4em;
+      border-radius: 4px;
+      border: 0;
+      color: white;
+      font-size: 13px;
+      background-color: #ff612e;
+      background-image: linear-gradient(to right, rgb(201, 73, 23), rgb(199, 41, 104));
+  }
+  #card-fotter{
+      position: absolute;
+      top: 12em;
+  }
+  .card4{
+      margin-top: 10em;
+      background-image: linear-gradient(to top, rgb(39, 35, 38), rgb(65, 54, 66));
+  }
+  #off{
+    text-decoration: line-through;
+  }
+
+  .gift{
+      
+    margin-left: 0.5em;
+      background-image: linear-gradient(to top, rgb(26, 21, 23) , rgb(3, 3, 3));
+     position: absolute;
+     top:145em;
+     width: 90%;
+     height: 25em;
+     text-align: center;
+
+     h1{
+         margin-top: 3em;
+     }
+
+     button {
+         width:41%;
+         height: 10%;
+         color: white;
+         border: 0;
+         background: rgb(204, 40, 122);
+     }
+  }
+
+  .feed{
+      position: relative;
+      top:30em;
+      margin-top: 30%;
+      background-color: black;
+      h1{
+          
+      margin-bottom: 2em;
+      text-align: center;
+      }
+      .fd-inner{
+        width: 71%;
+        height:17em;
+        border-radius: 5px;
+        position: relative;
+        right:1em;
+        left: 3.5em;
+        margin-bottom: 5em;
+        background-color: white;
+        color: black;
+
+        img{
+            width: 80%;
+            position: relative;
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+        .user{
+            display: grid;
+            grid-template-rows: 14% 86%;
+
+            
+        }
+        .fd-head{
+            display: grid;
+            grid-template-columns: 25% 75%;
+            
+        }
+        .name{
+            font-weight: 900;
+        }
+        .content {
+            position: absolute;
+            top: 25%;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        .usertag{
+            color:rgb(219, 115, 132);
+        }
+      }
+      .fd-footer{
+          text-align: center;
+        
+      }
+  }
+
+  .dropdown{
+      position: relative;
+      top: 40em;
+      background-color: rgb(27, 26, 26);
+      margin-bottom: 1em;
+       .drop-head{
+           p{
+               padding-top: 5em;
+               padding-left: 2em;
+           }
+           h1{
+               padding-left:1em;
+               font-weight: 500;
+               padding-bottom:1em;
+               b{
+                   font-weight: 900;
+               }
+           }
+       }
+      button{
+          background-color: rgb(27, 26, 26);
+          color: white;
+          border: none;
+          width: 100%;
+          text-align: left;
+          font-size: 22px;
+          margin-top: 1.5em;
+          padding: 0 10px;
+          border-bottom: 1px solid rgb(75, 72, 72);
+          cursor: pointer;
+          
+      }
+      .accordion-content{
+          padding: 0 10px;
+          text-align: left;
+          max-height:0;
+          overflow: hidden;
+          transition: max-Height 0.5s ease-in-out;
+         
+      }
+     button.accordion::after{
+         content: '\f078';
+         font-family: "fontawesome";
+         font-size: 14px;
+         float: right;
+     }
+     button.accordion.is-open::after{
+         content: '\f077';
+         font-family: "fontawesome";
+         font-size: 14px;
+         float:right;
+     }
+     #drop-last{
+         padding-bottom: 5em;
+     }
+  }
+
+  .contact{
+      text-align: center;
+      position: relative;
+      top:40em;
+      margin-top: 7em;
+      margin-bottom: 8em;
+      button {
+          margin-top: 2em;
+        width: 70%;
+        height: 4em;
+        border-radius: 4px;
+        border: 0;
+        color: white;
+        font-size: 13px;
+        background-color: #ff612e;
+        background-image: linear-gradient(to right, rgb(201, 73, 23), rgb(199, 41, 104));
+        font-size: 15px;
+    }
+  }
+
+  .main-footer{
+      margin-top: 45em;
+      background-color: rgb(27, 26, 26);
+      p{
+          padding-left:1em;
+          padding-bottom: 1.6em;
+      }
+
+      .footer-head{
+          padding-top: 3em;
+          font-size: 14px;
+          padding-left:3em;
+
+          ul{
+              list-style-type: none;
+              overflow: hidden;
+              margin: 0;
+              padding: 0;
+        }
+        li{
+            float:left;
+        }
+        li a{
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        .footer-icon{
+          .li1::before{
+            content: '\f144';
+            font-family: "fontawesome";
+            padding: 2em;
+          }
+          .li2::before{
+            content: '\f1d8';
+            font-family: "fontawesome";
+            padding: 4em;
+          }
+          .li3::before{
+            content: '\f272';
+            font-family: "fontawesome";
+            padding: 2em;
+          }
+        }
+      }
+      .accordion-content{
+        padding: 0 10px;
+        text-align: left;
+        max-height:0;
+        overflow: hidden;
+        transition: max-Height 0.5s ease-in-out;
+        border-bottom: 1px solid rgb(44, 43, 44);
+        background-color: rgb(27, 26, 26);
+        padding-right: 5em;
+       
+    }
+   .accordion::after{
+       content: '\f078';
+       font-family: "fontawesome";
+       font-size: 14px;
+       float: right;
+       padding-right: 1em;
+   }
+   .accordion.is-open::after{
+       content: '\f077';
+       font-family: "fontawesome";
+       font-size: 14px;
+       float:right;
+       padding-right: 1em;
+   }
+  }
+}
+
+
+@media screen and (min-width: 500px ) {
+    body{
+
+        #cover {
+            margin-top: 20%;
+        }
+        #card{
+            width: 50%;     
+            left: 25%;
+        }
+        #card3{
+            width: 50%;
+            left:25%;
+        }
+        .slider{
+            width: 50%;
+            left:50%;
+        }
+
+        .gift{
+            top:138em;
+            margin-left: 1em;
+            margin-right: 2em;
+
+            h1{
+                font-size: 2.5em;
+            }
+        }
+        .feed{
+            margin-top: 1em;
+          .fd-inner{
+              width: 86%;
+              height: 11.3em;
+              
+          img{
+              width: 25%;
+              margin-left: 1em;
+              margin-top:1em;
+          }
+          }
+          .fd-head{
+              margin-top: -1em;
+          }
+          .content{
+              margin-top:0.7em;
+              font-size:15px;
+          }
+          .name{
+              margin-left:-5em;
+          }
+          .t-name{
+              margin-left:-5em;
+              margin-top: 1.2em;
+          }
+      }
+
+      .main-footer{
+          display:grid;
+          grid-template-columns: 30% 70%;
+          
+          
+
+          .footer-head{
+              display:grid ;
+              grid-template-rows:repeat(4,1fr);
+              ul{
+                  overflow: visible;
+              }
+          }
+      }
+        }
+
+    }
+
+
+@media screen and (min-width:1025px ) {
+    body{
+        #nav{
+            display: grid;
+            grid-template-columns: 97% 3%;
+            #sign{
+               margin-right: -20em;
+            }
+        }
+        #cover {
+            margin-top: 10%;
+        }
+
+        .slider{
+            margin-top: 4em;
+        }
+
+        .cards{
+            display:grid;
+            grid-template-columns: 70% 30%; 
+            grid-template-rows: minmax(auto);  
+            left:0;
+            right:0;
+            position: absolute;
+            width: 100%;
+        }
+        .gold{
+            display: grid;
+        }
+        .premium{
+            grid-column: 2/2;
+            grid-row: 1/2;
+            
+        }
+        #card-fotter{
+            position: absolute;
+            top:13em;
+        }
+
+        #card{
+            width: 91%;
+            left:1em;
+            top:2em;
+            font-size: 15px;
+
+            h2{
+                margin-top: 2em;
+                margin-bottom: 0;
+            }
+            #off{
+                font-size: 15px;
+                position: absolute;
+                top: 9em;
+                right: 6em;
+            }
+
+            button{
+                width: 60%;
+                border-radius: 0;
+            }
+        }
+    
+
+        .card1 {
+            width: 100%;
+            margin: 0;
+        }
+        .card02{
+            grid-row: auto;
+        }
+        .card2{
+            grid-column: 1/3;
+            top: 1em;
+            position: absolute;
+             
+            h3{
+                position: absolute;
+                left: 40px;
+            }
+           
+            ul{
+                
+                text-align: left;
+                display: grid;
+                grid-template-columns: 50% 50%;
+                grid-template-rows: repeat(6,40px);
+                padding-top: 5em;
+                padding-bottom: 2em; 
+                margin: 0;
+            }
+
+        }
+
+        #card3{
+            width: 90%;
+            left:1em;
+            top: 3em;
+            font-size: 17px;
+            
+            ul{
+                text-align: left;
+                list-style-type: none;
+            }
+
+        }
+
+        .card3{
+            height: 50%;
+
+            li{
+                margin: 10px;
+            }
+        }
+
+        .slider{
+            width: 20%;
+        }
+
+        .gift{
+            top:85em;
+            width:98%;
+
+            h1{
+                font-size: 2.5em;
+            }
+
+            button{
+                width: 11%;
+                height: 11%;
+                margin: 1em;
+            }
+        }
+      .feed{
+          margin-top: 55em;
+        .fd-inner{
+            width: 30%;
+            height: 14em;
+            
+        img{
+            width: 40%;
+            margin-left: 1em;
+            margin-top:1em;
+        }
+        }
+        .fd-head{
+            margin-top: -1em;
+        }
+        .content{
+            margin-top:0.7em;
+            font-size:15px;
+        }
+        .name{
+            margin-left:-2em;
+        }
+        .t-name{
+            margin-left:-2em;
+            margin-top: 1.2em;
+        }
+    }
+    .dropdown{
+        display: grid;
+        grid-template-columns: 45% 55%;
+        padding-top: 5em;
+        padding-bottom: 5em;
+        .drop-head{
+            p{
+                padding-top: 1em;
+                padding-left: 2em;
+            }
+            h1{
+                padding-left:1em;
+                font-size: 40px;
+                font-weight: 500;
+                b{
+                    font-weight: 900;
+                }
+            }
+        }
+        #drop-last{
+            margin-bottom: 1em;
+            border-bottom: none;
+        }
+        button{
+            font-size: 20px;
+        }
+    }
+    .contact{
+        margin-top: 6em;
+        button{
+            width:18%;
+        }
+    }
+  }
+
+}
