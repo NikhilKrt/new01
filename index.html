@@ -23,13 +23,14 @@
           </p>
       </div>
 
-      <div class="slider">
-              <input type="checkbox">
-              <div> 
-                  <span class="slide">
-              </span></div>
-          </label>
-    </div>
+       <div class="toggle-btn">
+        <label class="switch">
+            <input type="checkbox">
+            <div class="switch-btn"></div>
+        </label> 
+        </div>
+        
+    
     <br><br><br><br><br><br><br>
 
     <div class="cards" id="cards">
@@ -220,14 +221,11 @@
 
 
 <script>
-
     var acc = document.getElementsByClassName("accordion");
-
     for(var i= 0 ; i< acc.length; i++){
         acc[i].onclick= function() {
             this.classList.toggle('is-open');
             var content = this.nextElementSibling;
-
             if(content.style.maxHeight){
                 content.style.maxHeight= null;
             }
