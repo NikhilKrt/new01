@@ -86,6 +86,8 @@ body .switch-btn:before {
   -webkit-transition: all 0.4s ease-out;
   transition: all 0.4s ease-out;
   text-align: center;
+  line-height: 40px;
+  font-weight: bold;
 }
 
 body input {
